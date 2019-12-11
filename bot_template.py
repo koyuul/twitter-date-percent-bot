@@ -22,7 +22,7 @@ comparepercent=roundedpercent
 int (printpercent)
 _delta = truepercent-roundedpercent
 
-
+#if code works, it will tweet, if not, it will print "No change.". This can be viewed in the logs, if you are hosting on PythonAnywhere. 
 if((_delta<.00057) and (_delta>0)): #date matches
     api.update_status("There is " + str(int(printpercent)) + "% left!") #tweets "(percent)% left". Change to add context to tweet
     truepercent=1-(remains/total)
