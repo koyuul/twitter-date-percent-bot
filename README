@@ -1,4 +1,6 @@
-Hello everyone. This is my first time uploading a code on github, so sorry if I do it wrong. This bot uses Python 3.7.2. 
+Hello everyone. This is my first time uploading a code on github, so sorry if I do it wrong. This bot uses Python 3.7.2. The code came
+from a bot I used to calculate the percent of high school was left for the class of 2021 (my year :D). I haven't tested it with extremely
+seperated dates.
 
 In order to use this, you need to create a developer twitter account, and make an app, in order to get the proper keys. These keys are used to
 take the code output from code to tweet.
