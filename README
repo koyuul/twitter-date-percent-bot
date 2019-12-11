@@ -1,0 +1,11 @@
+Hello everyone. This is my first time uploading a code on github, so sorry if I do it wrong. This bot uses Python 3.7.2. 
+
+In order to use this, you need to create a developer twitter account, and make an app, in order to get the proper keys. These keys are used to
+take the code output from code to tweet.
+
+Make an account on any website that can run codes at a certain time. I used Python Anywhere (https://www.pythonanywhere.com).
+From there, you upload the code as a file, and then have it as a task that runs a certain time every day. 
+(Python Anywhere includes an expiring date, which requires you to extend the expiry once every month or so. 
+
+For me, it did not read Python commands at first, so be sure to check that Python Anywhere's console executes the code like your 
+compiler does.
