@@ -2,6 +2,7 @@
 import tweepy
 import datetime
 
+#insert your own keys below
 CONSUMER_KEY = ""
 CONSUMER_SECRET = ""
 ACCESS_KEY = ""
@@ -11,8 +12,8 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth, wait_on_rate_limit=True)
 
-starttime = datetime.datetime(2016, 8, 17, 0, 0, 0, 0) #aug 17 2017 replace date with whatever you want (year, month, date, specific time in day)
-endtime = datetime.datetime(2021, 6, 4, 0, 0, 0, 0) #june 4 21 (year, month, date, specific time in day)
+starttime = datetime.datetime(2017, 8, 17, 0, 0, 0, 0) #aug 17 2017
+endtime = datetime.datetime(2021, 6, 16, 0, 0, 0, 0) #june 5 21
 remains = endtime - datetime.datetime.now() #days from now on
 total = endtime - starttime #total days
 truepercent=1-(remains/total)
@@ -22,9 +23,9 @@ comparepercent=roundedpercent
 int (printpercent)
 _delta = truepercent-roundedpercent
 
-#if code works, it will tweet, if not, it will print "No change.". This can be viewed in the logs, if you are hosting on PythonAnywhere. 
+
 if((_delta<.00057) and (_delta>0)): #date matches
-    api.update_status("There is " + str(int(printpercent)) + "% left!") #tweets "(percent)% left". Change to add context to tweet
+    api.update_status("The Class of 2021 is "+ str(int(printpercent)) + "% finished with high school!")
     truepercent=1-(remains/total)
     roundedpercent=round(truepercent, 2)
 
